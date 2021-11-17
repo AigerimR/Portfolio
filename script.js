@@ -33,10 +33,10 @@ elements.forEach((e) => {
 });
 
 // submit form cleared
-const form = document.getElementById("form");
-const inputFields = document.querySelectorAll(".input-field");
+// const form = document.getElementById("form");
+// const inputFields = document.querySelectorAll(".input-field");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  inputFields.forEach((input) => (input.value = ""));
-});
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   inputFields.forEach((input) => (input.value = ""));
+// });

@@ -31,12 +31,3 @@ let observer = new IntersectionObserver(activateFunction, {
 elements.forEach((e) => {
   observer.observe(e);
 });
-
-// submit form cleared
-// const form = document.getElementById("form");
-// const inputFields = document.querySelectorAll(".input-field");
-
-// form.addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   inputFields.forEach((input) => (input.value = ""));
-// });

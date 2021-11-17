@@ -116,10 +116,11 @@
       <section id="contact">
         <h2>CONTACT ME</h2>
         <p class="hidden">Get in touch I would love to hear from you!</p>
-        <form action="" id="form" class="hidden">
+        <form action="" id="form" class="hidden" netlify>
           <div class="inputs">
             <input
               type="text"
+              name="name"
               placeholder="Name"
               class="input-field input-name"
               required
@@ -127,17 +128,20 @@
 
             <input
               type="text"
+              name="email"
               placeholder="E-mail"
               class="input-field input-email"
               required
             />
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
               class="input-field input-subject"
               required
             />
             <textarea
+              name="message"
               rows="10"
               class="input-field input-message"
               placeholder="Your message"

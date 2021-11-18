@@ -262,12 +262,12 @@ h4 {
 .lines-h {
   position: absolute;
   left: 3%;
-  top: 23%;
+  top: 26%;
 }
 .lines-v {
   position: absolute;
   left: 70%;
-  top: 30%;
+  top: 35%;
 }
 .circle {
   position: absolute;
@@ -372,6 +372,30 @@ form {
 }
 
 /* MEDIA */
+@media (max-width: 1280px) {
+  .line-1,
+  .line-2 {
+    display: none;
+  }
+  .aboutme-container {
+    column-gap: 1rem;
+  }
+  .info {
+    padding: 0 2rem 2rem 2rem;
+  }
+  .circle {
+    left: 78.2%;
+    top: -41%;
+  }
+  .lines-h {
+    top: 30%;
+    left: 1%;
+  }
+  .lines-v {
+    left: 70%;
+    top: 40%;
+  }
+}
 
 @media (max-width: 1024px) {
   main {
@@ -396,10 +420,6 @@ form {
   .square-2 {
     left: 5%;
     top: 16%;
-  }
-  .line-1,
-  .line-2 {
-    display: none;
   }
   #projects img {
     margin: auto;
@@ -431,10 +451,11 @@ form {
   }
   .lines-h {
     top: 18%;
+    left: 5%;
   }
   .lines-v {
     left: 60%;
-    top: 62%;
+    top: 59%;
   }
 }
 
@@ -481,7 +502,6 @@ form {
   .info {
     padding: 0 2rem 2rem 2rem;
   }
-
   .inputs {
     grid-template-areas:
       "name"
@@ -545,8 +565,7 @@ form {
     padding-bottom: 0.2rem;
   }
 }
-
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   main {
     margin: 3rem 0rem 0rem 0rem;
   }
@@ -564,16 +583,19 @@ form {
   .project-card {
     width: 100%;
   }
-  form {
-    margin-bottom: 0;
-  }
-  .intro-img {
-    display: none;
-  }
   .btn {
     margin: 0rem auto;
     font-size: 2rem;
     letter-spacing: 6px;
+  }
+  form {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro-img {
+    display: none;
   }
 }
 

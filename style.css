@@ -213,19 +213,16 @@ h4 {
   column-gap: 5rem;
   row-gap: 2rem;
   padding: 1rem 4rem;
-  /* padding: 2rem; */
   flex-wrap: wrap;
 }
 #projects img {
   width: 100%;
   display: block;
-  /* margin: 0 25px; */
   margin: 0 10px;
 }
 .project-card {
   position: relative;
   width: 250px;
-  /* width: 450px; */
 }
 
 .project-overlay {
@@ -246,7 +243,6 @@ h4 {
 .text-card {
   font-size: 16px;
   width: 270px;
-  /* width: 500px; */
   height: 100%;
   padding-top: 1rem;
   color: #000;
@@ -263,27 +259,28 @@ h4 {
 }
 .twin {
   top: 61%;
-  /* display: none; */
 }
 
 /* ABOUT ME Section */
 #about-me {
   position: relative;
 }
+.skills-container{
+  position: relative;
+}
 .lines-h {
   position: absolute;
-  left: 3%;
-  top: 26%;
+  left: -10%;
+  top: 5%;
 }
 .lines-v {
   position: absolute;
-  left: 70%;
-  top: 27%;
-  /* top: 35%; */
+  left: 15%;
+  top: 5%;
 }
 .circle {
   position: absolute;
-  left: 80.9%;
+  right: 0;
   top: -37%;
 }
 .aboutme-container {
@@ -303,6 +300,7 @@ h4 {
   background-color: var(--primary-extra-light);
   padding: 0 4rem 4rem 4rem;
   width: 690px;
+  position: relative;
 }
 .info p {
   text-align: justify;
@@ -313,7 +311,6 @@ h4 {
   border: 2px solid var(--primary-text);
   margin-top: 6rem;
   margin-bottom: 2rem;
-  /* margin-top: 10rem; */
 }
 
 .skills p {
@@ -412,17 +409,8 @@ form {
   .info {
     padding: 0 2rem 2rem 2rem;
   }
-  .circle {
-    left: 78.2%;
-    top: -41%;
-  }
   .lines-h {
-    top: 30%;
-    left: 1%;
-  }
-  .lines-v {
-    left: 70%;
-    top: 40%;
+    display: none;
   }
 }
 
@@ -471,20 +459,15 @@ form {
     row-gap: 2rem;
   }
   .circle {
-    left: 72%;
     top: -24%;
   }
   .info,
   .skills {
     margin: 0 auto 3rem auto;
   }
-  .lines-h {
-    top: 18%;
-    left: 5%;
-  }
+
   .lines-v {
-    left: 60%;
-    top: 59%;
+    display: none;
   }
 }
 
@@ -492,9 +475,8 @@ form {
   .square-1,
   .square-2,
   .square-3,
-  .circle,
-  .lines-h,
-  .lines-v {
+  .circle
+  {
     display: none;
   }
   .intro-text {

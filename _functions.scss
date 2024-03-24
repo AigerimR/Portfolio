@@ -1,0 +1,12 @@
+$fz-default: 16px;
+
+@function size($size-in-px) {
+  @return  $size-in-px / $fz-default * 1rem;
+  //@return  $size-in-px / $fz-default * 1.1111112vw;
+}
+
+@function font-size($size-in-px) {
+  @return  calc($size-in-px / $fz-default) * 1rem;
+}
+//calc(6.53333px + .66667vw)
+

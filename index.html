@@ -1,218 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Aigerim Raissova</title>
-  </head>
-  <body>
-    <div class="nav-name">
-      <img src="/img/logo.png" alt="" class="logo" />
-      <h4>Aigerim Raissova</h4>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
-    <main>
-      <section id="intro">
-        <div class="square-1"></div>
-        <div class="square-2"></div>
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-        <img src="/img/intro-img.png" alt="" class="intro-img" />
-        <div class="intro-text">
-          <div class="intro-1">
-            <h2>Hi, my name is</h2>
-            <h1>Aigerim</h1>
-            <h3>I'm a front-end Web Developer</h3>
-          </div>
+    <title>Aigerim</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="intro animation">
+        <div class="intro__left">
           <div>
-            <div class="intro-2">
-              <p>
-                I am a self-taught developer pursuing new opportunities in Web
-                Development.
-              </p>
-              <p>Here are some websites that I have created.</p>
-            </div>
-            <div class="intro-3">
-              <a href="#projects">
-                <button class="btn">&#91;PROJECTS&#93;</button>
-              </a>
-              <a href="#about-me">
-                <button class="btn">&#91;ABOUT ME&#93;</button>
-              </a>
+            <h1 class="intro-title">HELLO</h1>
+            <div class="intro-line"></div>
+            <h2 class="intro-greet">happy you<br>
+              are here!</h2>
+          </div>
+        </div>
+        <div class="intro__right">
+          <h3 class="intro-name">AIGERIM RAISSOVA</h3>
+          <div class="intro-text-wr">
+            <div class="intro-text">
+              <p>Ready to:</p>
+              <ul>
+                <li><p><span>build</span> and <span>learn</span> while meeting up with project deadlines.</p></li>
+                <li><p>work <span>in teams</span> and <span>collaborate</span> with other developers.</p></li>
+              </ul>
+              
+              
             </div>
           </div>
         </div>
-      </section>
-      <section id="projects">
-        <h2>PROJECTS</h2>
-        <div class="square-3"></div>
-        <div class="square-3 twin"></div>
-
-        <div class="projects-container">
-          <!-- BOOKSHOP -->
-          <div>
-            <div class="project-card hidden">
-              <a href="https://schooldepot.netlify.app/" target="_blank">
-                <img src="/img/laptop1.png" alt="" />
-                <div class="project-overlay"></div>
-              </a>
-            </div>
-            <div class="text-card">
-              <p>
-                A front-end part
-                of an E-commerce website of an online bookshop. It is an
-                existing online bookshop in the UK, but I have tailored it my
-                way, as it had an outdated format. I've tried to keep the design
-                engaging and at the same time moderate.
-              </p>
+      </div>
+      <div class="projects">
+        <h2 class="projects-title animation">MY PROJECTS</h4>
+        <div class="projects-grid animation">
+          <div class="projects-card">
+            <a class="projects-card__img-wr" href="https://ramen77.netlify.app/" target="_blank">
+              <img class="projects-card__img" src="/img/laptop2.png" alt=""/>
+              <div class="overlay"></div>
+            </a>
+            <div class="projects-card__text">
+              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
+              <p>This is a static website of a local business in a food industry. This project allowed me to practice my skills of presenting business online.</p>
+              <p>JavaScript, HTML, CSS</p>
             </div>
           </div>
-          <!-- RAMEN -->
-          <div>
-            <div class="project-card hidden">
-              <a href="https://ramen77.netlify.app" target="_blank">
-                <img src="/img/laptop2.png" alt="" />
-                <div class="project-overlay"></div>
-              </a>
-            </div>
-            <div class="text-card">
-              <p>
-                This is a static website of a local business in a food industry.
-                This project allowed me to practice my skills of presenting
-                business online, solving their problems with new technologies by
-                creating product in the internet.
-              </p>
+          <div class="projects-card" >
+            <a class="projects-card__img-wr" href="https://nytbestsellers-aigerim.netlify.app/" target="_blank">
+              <img class="projects-card__img" src="/img/laptop3.png" alt=""/>
+              <div class="overlay"></div>
+            </a>
+            <div class="projects-card__text">
+              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
+              <p>This application allows to search for Best Sellers Books by categories, author and title. With data from The New York Times Books API.</p>
+              <p>JavaScript, HTML, CSS</p>
             </div>
           </div>
-          <!-- NYT BESTSELLERS -->
-          <div>
-            <div class="project-card hidden">
-              <a
-                href="https://nytbestsellers-aigerim.netlify.app"
-                target="_blank"
-              >
-                <img src="/img/laptop3.png" alt="" />
-                <div class="project-overlay"></div>
-              </a>
-            </div>
-            <div class="text-card">
-              <p>
-                This application allows to search for Best Sellers Books by
-                categories, as well as by author and title of the book. I used
-                data from The New York Times Books API.
-              </p>
-            </div>
-          </div>
-          <!-- KEYBOARD -->
-          <div>
-            <div class="project-card hidden">
-              <a href="https://aigerimr.github.io/Keyboard/virtualkeyboard/" target="_blank">
-                <img src="/img/laptop7.png" alt="" />
-                <div class="project-overlay"></div>
-              </a>
-            </div>
-            <div class="text-card">
-              <p>
-                A Virtual Keyboard with the ability to switch between English and Russian languages and animated keystrokes.
-              </p>
-              <br>
-              <p>JavaScript</p>
-            </div>
-          </div>
-          <div>
-            <div class="project-card hidden">
-              <a href="https://rslang-team99.netlify.app/" target="_blank">
-                <img src="/img/laptop5.png" alt="" />
-                <div class="project-overlay"></div>
-              </a>
-            </div>
-            <div class="text-card">
-              <p>
-                An application to learn new English words.
-                A project made in team of 3. Components developed by me: Textbook with Dictionary (available only after authorization), Authorization.<br>
-              </p>
-              <br>
-              <p>React, Typescript, MaterialUI, Webpack, SASS</p>
-            </div>
-          </div>
-          <div>
-            <div class="project-card hidden">
-              <a href="https://rolling-scopes-school.github.io/aigerimr-JSFE2022Q1/online-store/" target="_blank">
-                <img src="/img/laptop6.png" alt="" />
-                <div class="project-overlay"></div>
-              </a>
-            </div>
-            <div class="text-card">
-              <p>
-                One page of an online store with sorting, filtering, adding to cart functionality.
-              </p><br>
+          <div class="projects-card">
+            <a class="projects-card__img-wr" href="https://rolling-scopes-school.github.io/aigerimr-JSFE2022Q1/online-store/" target="_blank">
+              <img class="projects-card__img" src="/img/laptop6.png" alt=""/>
+              <div class="overlay"></div>
+            </a>
+            <div class="projects-card__text">
+              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
+              <p>One page of an online store with sorting, filtering, adding to cart functionality.</p>
               <p>JavaScript, TypeScript, Webpack, HTML, CSS, ESLint</p>
             </div>
           </div>
-          <!-- <div>
-            <div class="project-card hidden">
-              <a href="https://videoplayer-aigerim.netlify.app" target="_blank">
-                <img src="/img/laptop4.png" alt="" />
-                <div class="project-overlay"></div>
-              </a>
+          <div class="projects-card">
+            <a class="projects-card__img-wr" href="https://aigerimr.github.io/Keyboard/virtualkeyboard/" target="_blank">
+              <img class="projects-card__img" src="/img/laptop7.png" alt=""/>
+              <div class="overlay"></div>
+            </a>
+            <div class="projects-card__text">
+              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
+              <p>A Virtual Keyboard with the ability to switch between English and Russian languages and animated keystrokes.</p>
+              <p>JavaScript, HTML, CSS</p>
             </div>
-            <div class="text-card">
-              <p>
-                Here I customized appearance of the browser built-in player to
-                make it more appealing as well as added new functionality with
-                JavaScript.
-              </p>
-            </div>
-          </div> -->
-        </div>
-      </section>
-      <section id="about-me">
-        <h2>ABOUT ME</h2>
-        <div class="aboutme-container">
-          <div class="info hidden">
-            <img src="/img/lines-h.png" alt="" class="lines-h" />
-            <h3>Info</h3>
-            <p>
-              I am a former Electrical Engineer and a mom of 2 amazing kids.
-              During maternity leave, my leaning to explore and learn new
-              technologies led me to a search. And through freelance I found how
-              to combine my technical background, analytical skills and craving
-              for creativity. That is how I found my passion in creating and
-              building digital products. I would love to build and learn while
-              meeting up with project deadlines. Ready to work in teams and
-              collaborate with other web developers.
-            </p>
-          </div>
-          <div class="skills-container">
-            <img src="/img/lines-v.png" alt="" class="lines-v" />
-            <div class="skills hidden">
-              <h3>Skills</h3>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-              <p>GIT</p>
-              <p>TypeScript</p>
-              <p>Webpack</p>
-            </div>
-            <a href="https://github.com/AigerimR" target="_blank" class="github-link"><b>Check my GitHub</b></a>
           </div>
         </div>
-        <!-- <img src="/img/lines-h.png" alt="" class="lines-h" /> -->
-        <!-- <img src="/img/lines-v.png" alt="" class="lines-v" /> -->
-        <img src="/img/circle.png" alt="" class="circle" />
-      </section>
-      <section id="contact">
-        <h2>CONTACT ME</h2>
-        <p class="hidden">Get in touch I would love to hear from you!</p>
-        <form
+      </div>
+    </div> 
+  </main>
+
+  <section class="container">
+    <div class="about">
+        <div class="left-line animation">
+          <div class="left-line-circle"></div>
+          <div class="left-line-line"></div>
+        </div>
+        <div class="right-line animation"></div>
+
+        <div class="about__text animation">
+          <h2>about me</h2>
+          <p>I am a former Electrical Engineer.</p>
+          <p>my leaning to <span>explore</span> and <span>learn</span> new technologies led me&nbsp;to a&nbsp;new career path as&nbsp;a&nbsp;developer</p>
+          <p>In my work i am trying to&nbsp;combine my <span>technical</span> background, analytical skills and&nbsp;craving for <span>creativity</span>.</p>
+          <p></p>
+        </div>
+        <div class="about__skills-wr animation">
+          <h2>skills</h2>
+          <div class="about__skills">
+            <p class="about__skills-line"><span>html</span><span class="span-2">css</span><span class="span-3">sass</span></p>
+            <p class="about__skills-line"><span>javascript</span><span>jquery</span></p>
+            <p class="about__skills-line"><span>react</span><span>vue</span></p>
+            <p class="about__skills-line"><span>git</span><span>typescript</span></p>
+          </div>
+        </div>
+       
+
+        <div class="about__github-wr animation">
+          <img class="about__github-img" src="/img/blob-1.svg" alt=""/>
+          <a class="about__github-link" href="https://github.com/aigerimr" target="_blank">my github</a>
+        </div>
+        <img class="about__img" src="/img/blob-2.svg" alt=""/>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-title animation">Get in touch, I’d love to hear from you!</div>
+      <form
           action=""
           id="form"
-          class="hidden"
+          class="hidden animation"
           name="contact"
           method="POST"
           data-netlify="true"
+          onsubmit="formValidation();return false"
         >
           <div class="inputs">
             <input
@@ -245,10 +164,14 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn">&#91;SUBMIT&#93;</button>
+          <button type="submit" class="submit-btn">SEND</button>
         </form>
-      </section>
-    </main>
-    <script src="/script.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="/libs/jquery/jquery-3.2.1.min.js"></script>
+  <script src="/libs/jquery/jquery.migrate.3.0.0.js"></script>
+  <script src="/libs/waypoints/waypoints.min.js"></script>
+
+  <script src="/main.js"></script>
+</body>
 </html>

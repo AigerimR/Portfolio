@@ -1,0 +1,495 @@
+@import "./functions";
+
+$primary: #5C5555;
+$primary-dark: #3E3636;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 1.1111112vw;
+}
+body {
+  color: #5C5555;
+  text-transform: uppercase;
+  font-family: 'Outfit';
+  font-weight: 400;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 40px;
+  margin: auto;
+}
+main {
+  background: url("/img/bckg.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}/*# sourceMappingURL=styles.css.map */
+h2 {
+  font-size: size(42px);
+}
+.intro {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  &__left {
+    font-weight: 500;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-title {
+    font-size: size(90px);
+    font-family: 'Reem';
+    line-height: normal;
+    border-bottom: 5px solid #918E8E;
+    margin-bottom: 15px;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  &-name {
+    font-size: size(38px);
+    font-weight: 400;
+    border-top: 2px solid $primary;
+    padding-right: 50px;
+    padding-top: size(5px);
+  }
+  &-text-wr {
+    padding: 12px;
+    border-left: 2px solid $primary;
+  }
+  &-text {
+    background: #D9D9D9;
+    padding: 16px 20px;
+    color: $primary-dark;
+    font-size: size(18px);
+    line-height: 135%;
+    box-shadow: 5px -5px rgba(0, 0, 0, 0.25);
+    p:first-child {
+      margin-bottom: 20px;
+    }
+    p:last-child {
+      margin-top: 10px;
+    }
+    span {
+      font-weight: 500;
+    }
+    li {
+      list-style-type: "•";
+      padding-left: 10px;
+      &::marker {
+        color: $primary;
+      }
+    }
+  }
+}
+.projects {
+  &-title {
+    width: 50%;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    border-top: 2px solid $primary;
+    padding-top: 20px;
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10vh;
+    justify-items: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+  }
+  &-card {
+    color: $primary-dark;
+    font-size: size(16px);
+    line-height: 120%;
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 430px;
+    &__img-wr {
+      height: fit-content;
+      width: 82%;
+      position: relative;
+      display: block;
+      margin: auto;
+      &:hover {
+        .overlay {
+          opacity: 0.3;
+        }
+      }
+    }
+    &__img {
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    &__stroke {
+      width: 180%;
+      height: 160%;
+      top: -40%;
+      left: -40%;
+      position: absolute;
+      z-index: -1;
+    }
+    &__text {
+      text-align: justify;
+      position: relative;
+      width: 100%;
+      height: 15vh;
+      height: size(160px);
+      margin: 20px auto 0 auto;
+      p:last-child {
+        margin-top: 14px;
+        font-size: size(14px);
+        font-weight: 500;
+        width: 90%;
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    width: 76%;
+    height: 76%;
+    top: 7%;
+    left: 11.2%;
+    background: $primary;
+    opacity: 0;
+    transition: 0.2s;
+  }
+}
+.about {
+  width: 80%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px auto 0 auto;
+  position: relative;
+  h2 {
+    margin: 40px 0 50px auto;
+  }
+  &__img {
+    position: absolute;
+    right: -15%;
+    bottom: 0;
+    z-index: -1;
+  }
+  &__text {
+    width: 80%;
+    p {
+      margin-bottom: 16px;
+      line-height: 135%;
+      font-size: size(16px);
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  &__skills {
+    width: 100%;
+    height: fit-content;
+    border: 2px solid $primary;
+    box-shadow: 2px -2px rgba(0, 0, 0, 0.25);
+    padding: 30px 0;
+    line-height: 160%;
+    font-size: size(32px);
+    overflow: hidden;
+    &-line {
+      padding: 0 20px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-line:nth-child(2) {
+      padding-left: 15%;
+    }
+    &-line:nth-child(3) {
+      padding-right: 40%;
+    }
+    &-line:nth-child(4) {
+      padding-left: 35%;
+    }
+  }
+  &__github {
+    &-wr {
+      position: relative;
+    }
+    &-img {
+      position: absolute;
+      width: 80%;
+      height: auto;
+      transform: translate(-35%, -53%);
+      z-index: -1;
+    }
+    &-link {
+      text-decoration: none;
+      color: $primary;
+      font-size: size(38px);
+      border-top: 2px solid $primary;
+      padding: size(5px) 50px 0 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .left-line {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    &-circle {
+      width: 10px;
+      height: 10px;
+      background: $primary;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    &-line {
+      width: 80px;
+      height: 2px;
+      background: $primary;
+    }
+  }
+  .right-line {
+    width: 80px;
+    height: 2px;
+    background: $primary;
+    justify-self: flex-end;
+    align-self: center;
+  }
+}
+
+footer {
+  height: 105vh;
+  background: linear-gradient(180deg, transparent 0%, transparent 4%, rgb(118, 157, 154, 0.8) 15%,#769D9A 25%, #B490CA 100%);
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.footer-title {
+  text-align: center;
+  width: 70%;
+  margin: size(120px) auto 0 auto;
+  font-size: size(38px);
+  border-top: 2px solid $primary;
+}
+#form {
+  width: 50%;
+  margin:  auto;
+  font-size: size(24px);
+  position: relative;
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-field {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $primary;
+    height: 90px;
+    font-size: size(24px);
+    line-height: 90px;
+    color: $primary;
+    &::placeholder {
+      text-transform: uppercase;
+      font-size: size(24px);
+      line-height: 90px;
+      color: $primary;
+      font-family: 'Outfit';
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  textarea.input-field {
+    resize: none;
+    overflow: hidden;
+    min-height: size(140px);
+    margin-bottom: 50px;
+    line-height: normal;
+
+    &::placeholder {
+      line-height: size(140px);
+    }
+  }
+  .submit-btn {
+    position: absolute;
+    left: calc(100% + 50px);
+    top: calc(100% - 52px);
+    background: transparent;
+    font-size: size(38px);
+    color: $primary;
+    border: none;
+    border-top: 2px solid $primary;
+    padding-right: 50px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+//FOR ANIMATION
+.animation {
+  opacity: 0.25;
+  transform: translate(0, 50px);
+  transition: all 1.5s;
+}
+
+.animation.animated {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+@media (max-width: 1440px) {
+  .projects-card {
+    max-width: size(400px);
+  }
+}
+@media (max-width: 1300px) {
+  .intro {
+    grid-template-columns: 1.8fr 1.2fr;
+  }
+  .projects-grid {
+    margin-top: size(70px);
+  }
+}
+
+@media (max-width: 960px) {
+  html {
+    font-size: 1.4vw;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 2vw;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    &-grid {
+      margin-top: size(50px);
+      grid-template-columns: 1fr;
+    }
+    &-card {
+      max-width: 70vw;
+      &__stroke {
+        height: 140%;
+        width: 160%;
+        left: -30%;
+      }
+    }
+  }
+  .about {
+    width: 100%;
+    height: 100%;
+    &__text,
+    &__skills-wr,
+    &__github-wr {
+      grid-column: 1 / span 2;
+    }
+    &__github-wr { margin-top: 50px;}
+    &__img {
+      bottom: 50%;
+    }
+    &__github-img {
+      width: 40%;
+      transform: translate(-20%, -53%);
+    }
+  }
+  footer {
+    height: 100%;
+  }
+  .footer-title {
+    margin-bottom: 50px;
+  }
+  #form {
+    width: 70%;
+    margin-bottom: 70px;
+    .submit-btn {
+      left: auto;
+      right: 0;
+      top: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 3vw;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: size(24px);
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    &-greet {
+      font-size: size(42px);
+    }
+    &-name {
+      padding-right: 30px;
+    }
+  }
+  .projects {
+    &-grid {
+      margin-top: size(30px);
+    }
+    &-card {
+      &__stroke {
+        height: 150%;
+      }
+    }
+  }
+  .about {
+    h2 {
+      margin: 20px 0 30px auto;
+    }
+    &__skills {
+      padding: 15px 0;
+      font-size: size(24px);
+    }
+    &__github-link {
+      font-size: size(24px);
+      padding: size(5px) 30px 0 0;
+    }
+  }
+  .footer {
+    &-title {
+      width: 90%;
+      font-size: size(24px);
+      margin-bottom: size(40px);
+    }
+  }
+  #form {
+    width: 90%;
+    .input-field {
+      height: 60px;
+      font-size: size(18px);
+      line-height: 60px;
+      &::placeholder {
+        font-size: size(18px);
+        line-height: 60px;
+      }
+    }
+    .submit-btn {
+      font-size: size(24px);
+      padding-right: 30px;
+    }
+  }
+}

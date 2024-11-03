@@ -1,176 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./css/styles.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./libs/remodal/remodal.css">
+    <link rel="stylesheet" href="./libs/remodal/remodal-default-theme.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Aigerim</title>
-</head>
-<body>
-  <main>
-    <div class="container">
-      <div class="intro animation">
-        <div class="intro__left">
-          <div>
-            <h1 class="intro-title">HELLOO</h1>
-            <div class="intro-line"></div>
-            <h2 class="intro-greet">happy you<br>
-              are here!</h2>
-          </div>
-        </div>
-        <div class="intro__right">
-          <h3 class="intro-name">AIGERIM RAISSOVA</h3>
-          <div class="intro-text-wr">
-            <div class="intro-text">
-              <p>Ready to:</p>
-              <ul>
-                <li><p><span>build</span> and <span>learn</span> while meeting up with project deadlines.</p></li>
-                <li><p>work <span>in teams</span> and <span>collaborate</span> with other developers.</p></li>
-              </ul>
-              
-              
-            </div>
-          </div>
+      <script src="main.js"></script>
+  </head>
+  <body>
+    <section class="intro">
+      <div class="dot"></div>
+      <div class="grid-3 container">
+        <p class="t-xxl">Welcome <span class="t-xl">to</span></p>
+        <div class="t-xl">
+          <p>Aigerim</p>
+          <p>Raissova'<span>s</span></p>
+          <p>page</p>
         </div>
       </div>
-      <div class="projects">
-        <h2 class="projects-title animation">MY PROJECTS</h4>
-        <div class="projects-grid animation">
-          <div class="projects-card">
-            <a class="projects-card__img-wr" href="https://ramen77.netlify.app/" target="_blank">
-              <img class="projects-card__img" src="/img/laptop2.png" alt=""/>
-              <div class="overlay"></div>
-            </a>
-            <div class="projects-card__text">
-              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
-              <p>This is a static website of a local business in a food industry. This project allowed me to practice my skills of presenting business online.</p>
-              <p>JavaScript, HTML, CSS</p>
+    </section>
+    <section class="projects">
+        <p class="t-xl animation">My latest works</p>
+        <div class="project_wr">
+            <p class="t-m animation">Websites</p>
+            <div class="grid-3 container animation">
+              <div class="t-s">
+                <p>Here you could see examples of the webpages that were developed by me from the given Figma designs.</p>
+                <p>I have been working on a front part of the websites creating layouts and animations with <span>HTML, SCSS, JavaScript, jQuery</span> and different plugins.</p>
+              </div>
+              <div class="project_card">
+                <a class="project_card_content" data-remodal-target="video-modal" data-video-src="./assets/videos/OS.mp4">
+                  <img  class="project_card_image" src="./assets/images/OS.png" alt="OS" loading="lazy">
+                </a>
+                <a class="link t-s" href="http://www.office-solutions.kz/" target="_blank">
+                  Click to check
+                  <span class="circle"></span>
+                </a>
+              </div>
+              <div class="project_card">
+                <a class="project_card_content" data-remodal-target="video-modal" data-video-src="./assets/videos/tspg.mp4">
+                  <img  class="project_card_image" src="./assets/images/TSPG.png" alt="TSPG" loading="lazy">
+                </a>
+                <a class="link t-s" href="https://tspg.kz/" target="_blank">
+                  Click to check
+                  <span class="circle"></span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="projects-card" >
-            <a class="projects-card__img-wr" href="https://nytbestsellers-aigerim.netlify.app/" target="_blank">
-              <img class="projects-card__img" src="/img/laptop3.png" alt=""/>
-              <div class="overlay"></div>
-            </a>
-            <div class="projects-card__text">
-              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
-              <p>This application allows to search for Best Sellers Books by categories, author and title. With data from The New York Times Books API.</p>
-              <p>JavaScript, HTML, CSS</p>
-            </div>
-          </div>
-          <div class="projects-card">
-            <a class="projects-card__img-wr" href="https://rolling-scopes-school.github.io/aigerimr-JSFE2022Q1/online-store/" target="_blank">
-              <img class="projects-card__img" src="/img/laptop6.png" alt=""/>
-              <div class="overlay"></div>
-            </a>
-            <div class="projects-card__text">
-              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
-              <p>One page of an online store with sorting, filtering, adding to cart functionality.</p>
-              <p>JavaScript, TypeScript, Webpack, HTML, CSS, ESLint</p>
-            </div>
-          </div>
-          <div class="projects-card">
-            <a class="projects-card__img-wr" href="https://aigerimr.github.io/Keyboard/virtualkeyboard/" target="_blank">
-              <img class="projects-card__img" src="/img/laptop7.png" alt=""/>
-              <div class="overlay"></div>
-            </a>
-            <div class="projects-card__text">
-              <img class="projects-card__stroke" src="/img/stroke.png" alt=""/>
-              <p>A Virtual Keyboard with the ability to switch between English and Russian languages and animated keystrokes.</p>
-              <p>JavaScript, HTML, CSS</p>
-            </div>
-          </div>
         </div>
+      <div class="project_wr">
+          <p class="t-m animation">Vue Applications</p>
+          <div class="grid-3 container animation">
+              <div class="project_card">
+                  <a class="project_card_content" data-remodal-target="video-modal" data-video-src="./assets/videos/elin.mp4">
+                      <img  class="project_card_image" src="./assets/images/Elin.png" alt="elin" loading="lazy">
+                  </a>
+              </div>
+              <div class="t-s vue-text">
+                  <p>Web and mobile application Elin is a smart notepad written on <span>Vue</span> with elements from <span>Quasar</span> UI library.</p>
+                  <p>In this project I refreshed the interface of the Menu and Help sections. In the Menu, I added new functionality to create and sort folders. This included integration with backend API for saving the newly added data in tables.</p>
+                  <p>Additionally I worked on bugs fixes in different modules improving user experience.</p>
+                  <a class="link t-s" href="https://elin.app/home" target="_blank">
+                    Click to check
+                    <span class="circle"></span>
+                  </a>
+              </div>
+
+
+            <div class="t-s vue-text">
+              <p>Mobile application written on <span>Vue</span> and <span>Nuxt</span>.</p>
+              <p>Project involved a close work with the team of backend and frontend developers, designers and product manager.</p>
+              <p>In the video I am showing modules I have developed: FAQ with the search functionality, training module with test section, and a slider for additional information.</p>
+              <p>The app will be released for public use soon.</p>
+            </div>
+            <div class="project_card">
+                  <a class="project_card_content" data-remodal-target="video-modal" data-video-src="./assets/videos/dtp.mp4">
+                      <img  class="project_card_image" src="./assets/images/DTP.png" alt="dtp" loading="lazy">
+                  </a>
+              </div>
+          </div>
       </div>
-    </div> 
-  </main>
-
-  <section class="container">
-    <div class="about">
-        <div class="left-line animation">
-          <div class="left-line-circle"></div>
-          <div class="left-line-line"></div>
+    </section>
+<!--    <section class="skills">-->
+<!--    </section>-->
+    <section class="about t-m container">
+        <div class="animation">
+            <p>Thank you for watching!</p>
+            <p>Looking forward to hearing from you soon!</p>
         </div>
-        <div class="right-line animation"></div>
-
-        <div class="about__text animation">
-          <h2>about me</h2>
-          <p>I am a former Electrical Engineer.</p>
-          <p>my leaning to <span>explore</span> and <span>learn</span> new technologies led me&nbsp;to a&nbsp;new career path as&nbsp;a&nbsp;developer</p>
-          <p>In my work i am trying to&nbsp;combine my <span>technical</span> background, analytical skills and&nbsp;craving for <span>creativity</span>.</p>
-          <p></p>
+    </section>
+        <div class="remodal" data-remodal-id="video-modal">
+<!--          <button data-remodal-action="close" class="remodal-close"></button>-->
+<!--          autoplay="false"-->
+            <video loading="lazy" class="video" disableremoteplayback="" autoplay="true" loop="" muted="true" playsinline="" controls>
+              <source class="video-popup__src" type="video/mp4">
+            </video>
         </div>
-        <div class="about__skills-wr animation">
-          <h2>skills</h2>
-          <div class="about__skills">
-            <p class="about__skills-line"><span>html</span><span class="span-2">css</span><span class="span-3">sass</span></p>
-            <p class="about__skills-line"><span>javascript</span><span>jquery</span></p>
-            <p class="about__skills-line"><span>react</span><span>vue</span></p>
-            <p class="about__skills-line"><span>git</span><span>typescript</span></p>
-          </div>
-        </div>
-       
-
-        <div class="about__github-wr animation">
-          <img class="about__github-img" src="/img/blob-1.svg" alt=""/>
-          <a class="about__github-link" href="https://github.com/aigerimr" target="_blank">my github</a>
-        </div>
-        <img class="about__img" src="/img/blob-2.svg" alt=""/>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <div class="footer-title animation">Get in touch, I’d love to hear from you!</div>
-      <form
-          action=""
-          id="form"
-          class="hidden animation"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-        >
-          <div class="inputs">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              class="input-field input-name"
-              required
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              class="input-field input-email"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              class="input-field input-subject"
-              required
-            />
-            <textarea
-              name="message"
-              rows="10"
-              class="input-field input-message"
-              placeholder="Your message"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="submit-btn">SEND</button>
-        </form>
-    </div>
-  </footer>
-  <script src="/libs/jquery/jquery-3.2.1.min.js"></script>
-  <script src="/libs/jquery/jquery.migrate.3.0.0.js"></script>
-  <script src="/libs/waypoints/waypoints.min.js"></script>
-
-  <script src="/main.js"></script>
-</body>
+    <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./libs/jquery/jquery.migrate.3.0.0.js"></script>
+    <script src="./libs/remodal/remodal.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

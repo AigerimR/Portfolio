@@ -217,7 +217,7 @@ body {
   column-gap: 1.875rem;
   padding: 3.125rem;
 }
-.projects .project_wr .grid-3 .vue-text:nth-of-type(2) {
+.projects .project_wr .grid-3 .vue-text:nth-of-type(2n) {
   grid-column: 2/span 2;
   justify-self: flex-start;
   width: 70%;
